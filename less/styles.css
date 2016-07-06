@@ -1,0 +1,450 @@
+/* Couleurs */
+/* ------------------------------------------------------------------------ */
+/* >>>>>>>>>>>>>   reset                                               <<<< */
+/* ------------------------------------------------------------------------ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+input,
+select,
+textarea,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+img {
+  vertical-align: bottom;
+  border: 0px;
+}
+body,
+button {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.eot");
+  src: url("../fonts/Montserrat.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat.woff") format("woff"), url("../fonts/Montserrat.ttf") format("truetype"), url("../fonts/Montserrat.svg#Montserrat") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+#menu .menu-desktop {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 980px) {
+  #menu .menu-desktop {
+    visibility: visible;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dce0e0;
+  }
+}
+#menu .menu-desktop ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+#menu .menu-desktop ul li {
+  display: inline;
+}
+#menu .menu-desktop ul a {
+  float: left;
+  text-decoration: none;
+  color: #363636;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10.5px 20px;
+}
+#menu .menu-icon {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  transition: transform 0.5s;
+  top: 0;
+  left: 0;
+}
+#menu .menu-icon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  transition: background 0.5s;
+}
+#menu .menu-icon span::before,
+#menu .menu-icon span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-6px);
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.5s;
+}
+#menu .menu-icon span::after {
+  transform: translateY(6px);
+}
+@media only screen and (min-width: 980px) {
+  #menu .menu-icon {
+    display: none;
+  }
+}
+section {
+  width: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+section h2 {
+  padding: 30px 0 40px 0;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 980px) {
+  section h2 {
+    font-size: 30px;
+  }
+}
+section h2:after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #baa772;
+  display: block;
+  margin: 5px auto;
+}
+section article {
+  background-color: white;
+  margin-bottom: 20px;
+  height: 160px;
+}
+@media only screen and (min-width: 980px) {
+  section article {
+    height: 180px;
+    float: left;
+    width: 25%;
+  }
+}
+section article h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #303030;
+}
+@media only screen and (min-width: 980px) {
+  section article h3 {
+    font-size: 20px;
+  }
+}
+section article p {
+  font-size: 12px;
+  font-weight: 100;
+}
+@media only screen and (min-width: 980px) {
+  section article p {
+    font-size: 14px;
+  }
+}
+section article img {
+  margin: 35px 0 10px 0;
+}
+#intro {
+  width: 100%;
+  height: 250px;
+  background: no-repeat center url("../img/background.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 980px) {
+  #intro {
+    width: 100%;
+    height: 850px;
+  }
+}
+#intro h1 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+@media only screen and (min-width: 980px) {
+  #intro h1 {
+    font-size: 60px;
+  }
+}
+#intro p {
+  padding: 0px 25px 0px 25px;
+  font-weight: 100;
+  font-size: 14px;
+  width: 220px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 980px) {
+  #intro p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+#intro button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-size: 14px;
+  font-weight: 200;
+  color: white;
+  padding: 6px 30px 7px 30px;
+  border: solid white 2px;
+  text-decoration: none;
+  background-color: transparent;
+}
+@media only screen and (min-width: 980px) {
+  #intro button {
+    font-size: 18px;
+  }
+}
+#intro button:hover {
+  background-color: white;
+  color: #baa772;
+  transition-duration: .6s;
+}
+@media only screen and (min-width: 980px) {
+  #concept {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  #events #events-articles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#events #events-articles article {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 980px) {
+  #events #events-articles article {
+    height: 300px;
+    margin-left: 10px;
+  }
+}
+#events #events-articles article:first-of-type {
+  background-image: url("../img/event-1.jpg");
+  background-size: cover;
+}
+#events #events-articles article:nth-child(2) {
+  background-image: url("../img/event-2.jpg");
+  background-size: cover;
+}
+#events #events-articles article:nth-child(3) {
+  background: no-repeat center url("../img/event-3.jpg");
+  background-size: cover;
+}
+#events #events-articles article .contour {
+  width: 280px;
+  height: 120px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  border: 1px solid #baa772;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 980px) {
+  #events #events-articles article .contour {
+    vertical-align: middle;
+    width: 280px;
+    height: 250px;
+  }
+}
+#events #events-articles article .contour .legend {
+  vertical-align: middle;
+}
+#events #events-articles article .contour h4 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+@media only screen and (min-width: 980px) {
+  #events #events-articles article .contour h4 {
+    vertical-align: middle;
+  }
+}
+#events #events-articles article .contour p {
+  margin-top: 5px;
+}
+@media only screen and (min-width: 980px) {
+  #events #events-articles article .contour p {
+    vertical-align: middle;
+  }
+}
+#events #events-articles article .contour p img {
+  margin: 0 5px 0 0;
+}
+@media only screen and (min-width: 980px) {
+  #events #events-articles article .contour p img {
+    vertical-align: middle;
+  }
+}
+#contact img {
+  margin: 0;
+}
+#contact article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 980px) {
+  #contact article {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#contact article h3 {
+  color: white;
+}
+@media only screen and (min-width: 980px) {
+  #contact article h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  #contact article p {
+    font-size: 14px;
+  }
+}
+#contact article:first-of-type {
+  color: #626262;
+  background-color: #303030;
+}
+#contact article:nth-child(3) {
+  color: #626262;
+  background-color: #e4e2dd;
+  margin-bottom: 0px;
+}
+#contact article:nth-child(4) {
+  height: 90px;
+  color: #626262;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 980px) {
+  #contact article:nth-child(4) {
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer .legend {
+  vertical-align: middle;
+}
+footer .legend h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+@media only screen and (min-width: 980px) {
+  footer .legend h4 {
+    font-size: 25px;
+  }
+}
+footer .legend p {
+  font-size: 12px;
+  font-weight: 100;
+  color: #303030;
+}
